@@ -2,101 +2,132 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Justice</title>
-    <!-- favicon link -->
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Justice</title>
+  <!-- favicon link -->
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
-    <!-- tailwind and daisy ui link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind and daisy ui link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- font faily link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
-        rel="stylesheet">
+  <!-- font faily link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
 
-    <!-- font family css link -->
-    <style>
-        .font-garamond {
-            font-family: 'EB Garamond', serif;
-        }
-        .font-poppins {
-            font-family: 'Poppins', sans-serif; 
-        }
-    </style>
+  <!-- font family css link -->
+  <style>
+    .font-garamond {
+      font-family: 'EB Garamond', serif;
+    }
 
-    <!-- custom color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bg-primary': '#B68C5A',
-              }
-            }
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+
+  <!-- custom color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bg-primary': '#B68C5A',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
 
 <!-- body section starts -->
+
 <body>
 
   <!-- header section starts -->
-    <header class="lg:container md:container px-[40px] lg:px-[135px] md:px-[100px] mt-8 lg:mt-[59px]">
+  <header class="lg:container md:container px-[40px] lg:px-[135px] md:px-[100px] mt-8 lg:mt-[59px] mb-16 lg:mb-32">
 
-      <!-- nav section starts -->
-        <nav>
-          <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <!-- navbar for small device -->
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#707070] font-poppins">
-                  <li><a>Home</a></li>
-                  <li><a>Service <img src="./images/Frame-1.svg" alt="arrow"></a></li>
-                  <li><a>Cases <img src="./images/Frame-1.svg" alt="arrow"></a></li>
-                  <li><a>Blog <img src="./images/Frame-1.svg" alt="arrow"></a></li>
-                  <li><a>Contact Us <img src="./images/Frame-1.svg" alt="arrow"></a></li>
-                </ul> 
-              </div> 
-              <!-- navbar logo for all device -->
-              <img src="./images/logo2.png" alt="logo">
+    <!-- nav section starts -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <!-- navbar for small device -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-                    <!--navbar for large device  -->
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-center">
-                <li><a>Home</a></li>
-                <li><a>Service <img src="./images/Frame-1.svg" alt="arrow"></a></li>
-                <li><a>Cases <img src="./images/Frame-1.svg" alt="arrow"></a></li>
-                <li><a>Blog <img src="./images/Frame-1.svg" alt="arrow"></a></li>
-                <li><a>Contact Us <img src="./images/Frame-1.svg" alt="arrow"></a></li>
-              </ul>
-            </div>
-            <!-- navbar button for all device -->
-            <div class="navbar-end">
-              <a href=""><button class="text-white bg-bg-primary text-[18px] font-semibold rounded-lg border-none px-7 py-4">Free Consultation</button></a>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#707070] font-poppins">
+              <li><a>Home</a></li>
+              <li><a>Service <img src="./images/Frame-1.svg" alt="arrow"></a></li>
+              <li><a>Cases <img src="./images/Frame-1.svg" alt="arrow"></a></li>
+              <li><a>Blog <img src="./images/Frame-1.svg" alt="arrow"></a></li>
+              <li><a>Contact Us <img src="./images/Frame-1.svg" alt="arrow"></a></li>
+            </ul>
+          </div>
+          <!-- navbar logo for all device -->
+          <img src="./images/logo2.png" alt="logo">
+        </div>
+        <!--navbar for large device  -->
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-center">
+            <li><a>Home</a></li>
+            <li><a>Service <img src="./images/Frame-1.svg" alt="arrow"></a></li>
+            <li><a>Cases <img src="./images/Frame-1.svg" alt="arrow"></a></li>
+            <li><a>Blog <img src="./images/Frame-1.svg" alt="arrow"></a></li>
+            <li><a>Contact Us <img src="./images/Frame-1.svg" alt="arrow"></a></li>
+          </ul>
+        </div>
+        <!-- navbar button for all device -->
+        <div class="navbar-end">
+          <a href=""><button
+              class="text-white bg-bg-primary text-[18px] font-semibold rounded-lg border-none px-7 py-4">Free
+              Consultation</button></a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <!-- banner section starts -->
+    <section class="mt-7">
+      <div class="w-full bg-[url(./images/banner.PNG)] bg-no-repeat">
+
+        <div class="hero-content text-center text-neutral-content py-[110px] px-[240px]">
+          <div>
+            <h1 class="text-white text-7xl font-extrabold leading-[85px] font-garamond mb-6">We Provide Effective Legal
+              Solutions</h1>
+            <p class="mb-8 leading-[26px] text-[#E7E7E7] font-poppins">There are many variations of passages of Lorem
+              Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+            <div class="flex gap-6 justify-center">
+              <div>
+                <label for="search">
+                  <input
+                    class="py-[18px] pl-5 pr-[314px] outline-none border-none rounded-lg text-[#A0A0A0] leading-6 font-poppins"
+                    type="text" placeholder="search your services">
+                </label>
+              </div>
+              <button
+                class="bg-bg-primary text-white font-semibold text-xl font-poppins px-10 py-[18px] border-none rounded-lg">Search</button>
             </div>
           </div>
-        </nav>
-        <!-- navbar section end -->
+        </div>
+      </div>
+    </section>
+    <!-- banner section ends -->
+  </header>
+  <!-- header section ends -->
 
-        <!-- banner section starts -->
-        <section>
-          
-        </section>
-    </header>      
-                 
-                
-              
-              
-            
+
+
+
+
 
 </body>
 
