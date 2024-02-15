@@ -56,8 +56,8 @@
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <!-- navbar for small device -->
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <div class="dropdown lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
@@ -73,7 +73,9 @@
             </ul>
           </div>
           <!-- navbar logo for all device -->
-          <img src="./images/logo2.png" alt="logo">
+          <div>
+            <img src="./images/logo2.png" alt="logo">
+          </div>
         </div>
         <!--navbar for large device  -->
         <div class="navbar-center hidden lg:flex">
@@ -86,10 +88,10 @@
           </ul>
         </div>
         <!-- navbar button for all device -->
-        <div class="navbar-end">
-          <a href=""><button
-              class="text-white bg-bg-primary text-[18px] font-semibold rounded-lg border-none px-7 py-4">Free
-              Consultation</button></a>
+        <div class="navbar-end md:space-x-3 lg:space-x-6">
+          <a href=""><button class="text-white bg-bg-primary text-[18px] font-semibold rounded-lg border-none px-3 py-4 lg:px-7 lg:py-4">Free
+            Consultation</button></a>
+
         </div>
       </div>
     </nav>
@@ -106,12 +108,12 @@
               We Provide Effective <br> Legal
               Solutions</h1>
             <p class="mb-8 leading-[26px] text-[#E7E7E7] font-poppins">There are many variations of passages of Lorem
-              Ipsum available, but the majority  have suffered alteration in some form, by injected humour.</p>
-            <div class="flex gap-6 justify-center">
+              Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="flex flex-col lg:flex-row gap-6 justify-center">
               <div>
                 <label for="search">
                   <input
-                    class="py-[18px] pl-2 lg:pl-5 pr-[100px] lg:pr-[314px] outline-none border-none rounded-lg text-[#A0A0A0] leading-6 font-poppins"
+                    class="py-[18px] pl-6 lg:pl-5 pr-[100px] lg:pr-[314px] outline-none border-none rounded-lg text-[#A0A0A0] leading-6 font-poppins"
                     type="text" placeholder="search your services">
                 </label>
               </div>
@@ -423,16 +425,16 @@
     <section
       class="lg:container md:container px-[40px] lg:px-[135px] md:px-[100px] grid grid-cols-1 lg:grid-cols-4 gap-8 pt-[120px] pb-[120px]">
       <!-- column one starts -->
-      <div>
+      <div class="flex flex-col items-center lg:items-start">
         <img src="./images/logo.png" alt="logo">
-        <p class="text-[#707070] leading-[26px] font-poppins text-left mt-8">There are many variations of passages of
+        <p class="text-[#707070] leading-[26px] font-poppins text-center lg:text-left mt-3 lg:mt-8">There are many variations of passages of
           Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected
           humour.</p>
       </div>
       <!-- column two starts -->
-      <div>
-        <h1 class="text-white font-garamond text-2xl font-extrabold leading-[31px] mb-[47px]">Usefull Link</h1>
-        <ul class=" text-[#707070] font-poppins leading-[48px]">
+      <div class="flex flex-col items-center lg:items-start">
+        <h1 class="text-white font-garamond text-2xl font-extrabold leading-[31px] mb-[10px] lg:mb-[47px]">Usefull Link</h1>
+        <ul class=" text-[#707070] font-poppins leading-[25px] lg:leading-[48px]">
           <li><a href="">Home</a></li>
           <li><a href="">About US</a></li>
           <li><a href="">Cases</a></li>
@@ -441,23 +443,23 @@
         </ul>
       </div>
       <!-- column three starts -->
-      <div>
-        <h1 class="text-white font-garamond text-2xl font-extrabold leading-[31px] mb-[47px]">Contact Now</h1>
-        <p class="text-[#707070] leading-[26px] font-poppins text-left mb-4">555 4th 5t NW, Washington <br>
+      <div class="flex flex-col items-center lg:items-start">
+        <h1 class="text-white font-garamond text-2xl font-extrabold leading-[31px] mb-[10px] lg:mb-[47px]">Contact Now</h1>
+        <p class="text-[#707070] leading-[26px] font-poppins text-left mb-2 lg:mb-4">555 4th 5t NW, Washington <br>
           DC 20530, United States
         </p>
-        <p class="text-[#707070] leading-[26px] font-poppins text-left mb-4">
+        <p class="text-[#707070] leading-[26px] font-poppins text-left mb-2 lg:mb-4">
           +88 01750 000 000 <br>
           +88 01750 000 000
         </p>
-        <p class="text-[#707070] leading-[26px] font-poppins text-left mb-4">
+        <p class="text-[#707070] leading-[26px] font-poppins text-left mb-2 lg:mb-4">
           info@gmail.com <br>
           info@gmail.com
         </p>
       </div>
       <!-- column four starts -->
-      <div>
-        <h1 class="text-white font-garamond text-2xl font-extrabold leading-[31px] mb-[47px]">Subscribe</h1>
+      <div class="flex flex-col items-center lg:items-start">
+        <h1 class="text-white font-garamond text-2xl font-extrabold leading-[31px] mb-[10px] lg:mb-[47px]">Subscribe</h1>
         <p class="text-[#707070] leading-[26px] font-poppins text-left mb-4">
           Subscribe for our latest & <br> Articles. We Won’t Give You <br> Spam Mails</p>
         <div class="flex">
